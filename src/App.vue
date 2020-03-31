@@ -2,18 +2,20 @@
   <v-app dark >
     <Navbar/>
     <v-container class="mainContainer">
-      <router-view/>
+      <Home/>
     </v-container>
   </v-app>
 </template>
 
 <script>
 import Navbar from './components/Navbar';
+import Home from './views/Home';
 
 export default {
   name: 'App',
   components: {
-    Navbar
+    Navbar,
+    Home
   }
 }
 </script>
